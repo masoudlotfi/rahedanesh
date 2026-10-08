@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>دبستان راه دانش</title>
+  <meta name="description" content="دبستان راه دانش؛ آموزش خلاق، محیطی امن و شاد برای رشد فرزندان شما">
+  <link rel="preconnect" href="https://cdn.jsdelivr.net">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- ===== Header ===== -->
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="#home" class="logo">
+        <span class="logo__mark">ر</span>
+        <span class="logo__text">
+          <strong>دبستان راه دانش</strong>
+          <small>آموزش برای آینده</small>
+        </span>
+      </a>
+
+      <nav class="nav" id="nav">
+        <a href="#home" class="nav__link active">خانه</a>
+        <a href="#features" class="nav__link">چرا راه دانش</a>
+        <a href="#gallery" class="nav__link">گالری</a>
+        <a href="#contact" class="nav__link">تماس و موقعیت</a>
+        <a href="#staff" class="nav__link">کادر مدرسه</a>
+      </nav>
+
+      <div class="header__actions">
+        <a href="tel:02166123456" class="btn btn--primary btn--sm">ثبت‌نام ۱۴۰۵-۱۴۰۶</a>
+        <button class="burger" id="burger" aria-label="منو"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ===== Hero ===== -->
+    <section class="hero" id="home">
+      <img class="hero__img" src="images/hero.jpg" alt="" fetchpriority="high">
+      <div class="hero__overlay"></div>
+      <div class="container hero__inner">
+        <div class="hero__content reveal">
+          <span class="badge">🎒 ثبت‌نام سال تحصیلی جدید آغاز شد</span>
+          <h1>مسیر دانایی فرزند شما<br>از همین‌جا شروع می‌شود</h1>
+          <p>دبستان راه دانش با معلمان مجرب، کلاس‌های هوشمند و محیطی امن و شاد، کودکان را برای یادگیری عمیق، خلاقیت و زندگی بهتر آماده می‌کند.</p>
+          <div class="hero__buttons">
+            <a href="#contact" class="btn btn--white">مشاوره و ثبت‌نام</a>
+            <a href="#gallery" class="btn btn--outline">مشاهده مدرسه ←</a>
+          </div>
+        </div>
+        <ul class="stats reveal">
+          <li><strong data-count="15">۰</strong><span>سال تجربه</span></li>
+          <li><strong data-count="450">۰</strong><span>دانش‌آموز</span></li>
+          <li><strong data-count="38">۰</strong><span>معلم و کادر</span></li>
+          <li><strong data-count="12">۰</strong><span>کلاس هوشمند</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ===== Features ===== -->
+    <section class="section" id="features">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="eyebrow">چرا راه دانش؟</span>
+          <h2>همه چیز برای رشد کامل فرزند شما</h2>
+          <p>برنامه‌ای متعادل از آموزش، پرورش، ورزش و هنر در کنار هم</p>
+        </div>
+        <div class="features">
+          <article class="feature reveal"><div class="feature__icon">👩‍🏫</div><h3>معلمان مجرب</h3><p>کادری متعهد و آموزش‌دیده با سال‌ها تجربه در آموزش ابتدایی.</p></article>
+          <article class="feature reveal"><div class="feature__icon">💻</div><h3>کلاس‌های هوشمند</h3><p>تجهیزات آموزشی نوین، برد هوشمند و آزمایشگاه علوم.</p></article>
+          <article class="feature reveal"><div class="feature__icon">🧩</div><h3>کلاس‌های فوق‌برنامه</h3><p>رباتیک، زبان انگلیسی، هنر، قرآن و ورزش در طول هفته.</p></article>
+          <article class="feature reveal"><div class="feature__icon">🛡️</div><h3>محیط امن و شاد</h3><p>فضای سبز، سرویس ایاب‌وذهاب و نظارت کامل بر دانش‌آموزان.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Gallery ===== -->
+    <section class="section section--tint" id="gallery">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="eyebrow">گالری تصاویر</span>
+          <h2>نگاهی به فضای مدرسه</h2>
+          <p>کلاس‌ها، حیاط، آزمایشگاه و لحظه‌های شاد دانش‌آموزان</p>
+        </div>
+        <div class="filters reveal" id="filters">
+          <button class="filter active" data-filter="all">همه</button>
+          <button class="filter" data-filter="class">کلاس‌ها</button>
+          <button class="filter" data-filter="yard">حیاط و ورزش</button>
+          <button class="filter" data-filter="event">مراسم و جشن‌ها</button>
+        </div>
+        <div class="gallery" id="galleryGrid"><!-- filled by main.js --></div>
+      </div>
+    </section>
+
+    <!-- ===== Contact & Location ===== -->
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="eyebrow">تماس با ما</span>
+          <h2>به ما سر بزنید</h2>
+          <p>برای ثبت‌نام، مشاوره یا بازدید از مدرسه با ما در ارتباط باشید</p>
+        </div>
+        <div class="contact">
+          <div class="contact__info reveal">
+            <div class="info-card">
+              <span class="info-card__icon">📍</span>
+              <div><h4>نشانی</h4><p>تهران، خیابان آزادی، خیابان راه دانش، پلاک ۲۴</p></div>
+            </div>
+            <div class="info-card">
+              <span class="info-card__icon">📞</span>
+              <div><h4>تلفن</h4><p><a href="tel:02166123456" dir="ltr">۰۲۱-۶۶۱۲۳۴۵۶</a></p></div>
+            </div>
+            <div class="info-card">
+              <span class="info-card__icon">✉️</span>
+              <div><h4>ایمیل</h4><p><a href="mailto:info@rahedanesh.ir">info@rahedanesh.ir</a></p></div>
+            </div>
+            <div class="info-card">
+              <span class="info-card__icon">🕘</span>
+              <div><h4>ساعت پاسخگویی</h4><p>شنبه تا چهارشنبه، ۷:۳۰ تا ۱۴:۰۰</p></div>
+            </div>
+          </div>
+          <div class="map reveal">
+            <!-- مختصات مدرسه را در bbox و marker جایگزین کنید -->
+            <iframe
+              title="موقعیت دبستان راه دانش"
+              src="https://www.openstreetmap.org/export/embed.html?bbox=51.380%2C35.690%2C51.400%2C35.705&amp;layer=mapnik&amp;marker=35.6975%2C51.390"
+              loading="lazy"></iframe>
+            <a class="btn btn--primary map__btn" target="_blank" rel="noopener"
+               href="https://www.openstreetmap.org/?mlat=35.6975&amp;mlon=51.390#map=17/35.6975/51.390">مسیریابی</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Staff ===== -->
+    <section class="section section--tint" id="staff">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="eyebrow">کادر مدرسه</span>
+          <h2>با همراهان فرزندتان آشنا شوید</h2>
+        </div>
+        <div class="carousel reveal" id="staffCarousel">
+          <div class="carousel__viewport">
+            <div class="carousel__track" id="staffTrack"><!-- filled by main.js --></div>
+          </div>
+          <button class="carousel__btn carousel__prev" aria-label="قبلی"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg></button>
+          <button class="carousel__btn carousel__next" aria-label="بعدی"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M15 6l-6 6 6 6"/></svg></button>
+          <div class="carousel__dots" id="staffDots"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== Footer ===== -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <a href="#home" class="logo logo--light">
+          <span class="logo__mark">ر</span>
+          <span class="logo__text"><strong>دبستان راه دانش</strong><small>آموزش برای آینده</small></span>
+        </a>
+        <p>دبستان غیردولتی راه دانش، دارای مجوز رسمی از آموزش و پرورش.</p>
+      </div>
+      <div>
+        <h5>دسترسی سریع</h5>
+        <a href="#features">چرا راه دانش</a>
+        <a href="#gallery">گالری</a>
+        <a href="#staff">کادر مدرسه</a>
+      </div>
+      <div>
+        <h5>ارتباط</h5>
+        <a href="tel:02166123456">۰۲۱-۶۶۱۲۳۴۵۶</a>
+        <a href="mailto:info@rahedanesh.ir">info@rahedanesh.ir</a>
+        <a href="#contact">موقعیت روی نقشه</a>
+      </div>
+    </div>
+    <div class="container footer__bottom">© <span id="year"></span> تمامی حقوق برای دبستان راه دانش محفوظ است.</div>
+  </footer>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <button class="lightbox__close" aria-label="بستن">×</button>
+    <button class="lightbox__nav lightbox__prev" aria-label="قبلی"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg></button>
+    <figure><img alt=""><figcaption></figcaption></figure>
+    <button class="lightbox__nav lightbox__next" aria-label="بعدی"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M15 6l-6 6 6 6"/></svg></button>
+  </div>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
