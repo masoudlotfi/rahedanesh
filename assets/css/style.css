@@ -1,3 +1,17 @@
+/* Fonts (self-hosted, SIL OFL — see assets/fonts/OFL-*.txt) */
+@font-face {
+  font-family: Vazirmatn;
+  src: url("../fonts/Vazirmatn-wght.woff2") format("woff2");
+  font-weight: 100 900;
+  font-display: swap;
+}
+@font-face {
+  font-family: Estedad;
+  src: url("../fonts/Estedad-wght.woff2") format("woff2");
+  font-weight: 100 900;
+  font-display: swap;
+}
+
 :root {
   --primary: #1f5eff;
   --primary-dark: #1446c8;
@@ -11,12 +25,14 @@
   --radius: 20px;
   --shadow: 0 10px 40px rgba(31, 94, 255, .10);
   --shadow-lg: 0 24px 60px rgba(15, 27, 61, .14);
+  --font-body: Vazirmatn, Tahoma, sans-serif;
+  --font-head: Estedad, Vazirmatn, Tahoma, sans-serif;
 }
 
 * { box-sizing: border-box; margin: 0; padding: 0; }
 html { scroll-behavior: smooth; scroll-padding-top: 84px; }
 body {
-  font-family: Vazirmatn, Tahoma, sans-serif;
+  font-family: var(--font-body);
   color: var(--text);
   background: var(--bg);
   line-height: 1.8;
@@ -24,6 +40,7 @@ body {
 }
 a { color: inherit; text-decoration: none; }
 img { max-width: 100%; display: block; }
+h1, h2, h3, h4, h5, .logo__text strong, .btn, .eyebrow, .stats strong, .badge { font-family: var(--font-head); }
 button { font: inherit; cursor: pointer; border: 0; background: none; color: inherit; }
 
 .container { width: min(1200px, 100% - 32px); margin-inline: auto; }
